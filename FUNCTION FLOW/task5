@@ -1,0 +1,13 @@
+function Factorial(number: number): number {
+  let result = 1;
+
+  for (let i = 1; i <= number; i++) {
+    result = result * i;
+  }
+
+  return result;
+}
+
+let result = Factorial(5);
+
+console.log("Factorial:", result);

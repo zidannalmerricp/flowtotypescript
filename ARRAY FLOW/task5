@@ -1,0 +1,27 @@
+import * as readline from "readline";
+
+const students: string[] = ["Andi", "Budi", "Citra", "Dina", "Eka"];
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Enter student name: ", (name) => {
+  let found = false;
+
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].toLowerCase() === name.toLowerCase()) {
+      console.log("FOUND");
+      console.log("Index:", i);
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    console.log("NOT FOUND");
+  }
+
+  rl.close();
+});

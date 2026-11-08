@@ -1,0 +1,16 @@
+function PrintReceiptLine(
+  itemName: string,
+  quantity: number,
+  price: number
+): void {
+  let subtotal = quantity * price;
+
+  console.log("Item:", itemName);
+  console.log("Quantity:", quantity);
+  console.log("Price:", price);
+  console.log("Subtotal:", subtotal);
+  console.log("----------------");
+}
+
+PrintReceiptLine("Coffee", 2, 15000);
+PrintReceiptLine("Bread", 3, 10000);

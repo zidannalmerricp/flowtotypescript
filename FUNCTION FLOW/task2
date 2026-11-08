@@ -1,0 +1,7 @@
+function Square(number: number): number {
+  return number * number;
+}
+
+let result = Square(5);
+
+console.log("Square:", result);

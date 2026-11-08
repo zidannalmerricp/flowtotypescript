@@ -1,0 +1,11 @@
+const scores: number[] = [80, 65, 90, 70, 85, 75, 60];
+
+let passed = 0;
+
+for (let i = 0; i < scores.length; i++) {
+  if (scores[i] >= 75) {
+    passed++;
+  }
+}
+
+console.log("Number of students passed:", passed);

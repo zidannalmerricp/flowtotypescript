@@ -1,0 +1,13 @@
+function FinalPrice(price: number, discount: number): number {
+  if (discount === 0) {
+    discount = 5;
+  }
+
+  return price - (price * discount / 100);
+}
+
+let price1 = FinalPrice(50000, 0);
+let price2 = FinalPrice(50000, 10);
+
+console.log("Default Discount:", price1);
+console.log("Specific Discount:", price2);

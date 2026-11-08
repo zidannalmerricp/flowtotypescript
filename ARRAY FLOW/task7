@@ -1,0 +1,5 @@
+const members: string[] = ["Andi", "Budi", "Citra", "Dina"];
+
+for (let i = members.length - 1; i >= 0; i--) {
+  console.log(members[i]);
+}

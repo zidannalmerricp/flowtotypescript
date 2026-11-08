@@ -1,0 +1,13 @@
+const products: string[] = ["Book", "Pen", "Bag", "Pencil", "Ruler"];
+const prices: number[] = [15, 5, 50, 3, 8];
+
+let cheapestIndex = 0;
+
+for (let i = 1; i < prices.length; i++) {
+  if (prices[i] < prices[cheapestIndex]) {
+    cheapestIndex = i;
+  }
+}
+
+console.log("Cheapest Product:", products[cheapestIndex]);
+console.log("Price:", prices[cheapestIndex]);

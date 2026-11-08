@@ -1,0 +1,22 @@
+const scores: number[][] = [
+  [80, 85, 90],
+  [75, 80, 85],
+  [90, 95, 100]
+];
+
+for (let i = 0; i < scores.length; i++) {
+  let total = 0;
+
+  console.log("Student", i + 1);
+
+  for (let j = 0; j < scores[i].length; j++) {
+    console.log("Exam", j + 1, ":", scores[i][j]);
+    total += scores[i][j];
+  }
+
+  let average = total / scores[i].length;
+
+  console.log("Total:", total);
+  console.log("Average:", average);
+  console.log("----------------");
+}

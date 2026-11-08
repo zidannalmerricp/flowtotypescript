@@ -1,0 +1,5 @@
+function PrintWelcome(name: string): void {
+  console.log("Welcome to Moklet Coding Club,", name);
+}
+
+PrintWelcome("Zidan");

@@ -1,0 +1,19 @@
+function CalculateSubtotal(price: number, quantity: number): number {
+  return price * quantity;
+}
+
+function CalculateShipping(subtotal: number): number {
+  if (subtotal >= 200000) {
+    return 0;
+  } else {
+    return 15000;
+  }
+}
+
+let subtotal = CalculateSubtotal(50000, 3);
+let shipping = CalculateShipping(subtotal);
+let grandTotal = subtotal + shipping;
+
+console.log("Subtotal:", subtotal);
+console.log("Shipping Cost:", shipping);
+console.log("Grand Total:", grandTotal);

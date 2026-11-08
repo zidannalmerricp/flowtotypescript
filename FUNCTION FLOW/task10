@@ -1,0 +1,50 @@
+function CalculateAverage(
+  score1: number,
+  score2: number,
+  score3: number
+): number {
+  return (score1 + score2 + score3) / 3;
+}
+
+function DetermineGrade(average: number): string {
+  if (average >= 90) {
+    return "A";
+  } else if (average >= 80) {
+    return "B";
+  } else if (average >= 70) {
+    return "C";
+  } else if (average >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+
+function PrintReport(
+  name: string,
+  average: number,
+  grade: string
+): void {
+  console.log("Student:", name);
+  console.log("Average:", average.toFixed(2));
+  console.log("Grade:", grade);
+  console.log("----------------");
+}
+
+const students = ["Andi", "Budi"];
+
+const score1 = [90, 75];
+const score2 = [85, 80];
+const score3 = [95, 85];
+
+for (let i = 0; i < students.length; i++) {
+  let average = CalculateAverage(
+    score1[i],
+    score2[i],
+    score3[i]
+  );
+
+  let grade = DetermineGrade(average);
+
+  PrintReport(students[i], average, grade);
+}

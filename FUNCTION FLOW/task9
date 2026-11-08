@@ -1,0 +1,15 @@
+let TotalCalls = 0;
+
+function LogCall(): void {
+  TotalCalls++;
+
+  let callNumber = TotalCalls;
+
+  console.log("Call Number:", callNumber);
+}
+
+LogCall();
+LogCall();
+LogCall();
+
+console.log("Total Calls:", TotalCalls);
